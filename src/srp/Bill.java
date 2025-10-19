@@ -20,11 +20,7 @@ public class Bill {
 		// Dedukzioa kalkulatu
 		billDeduction = deductionCalc.calculateBillDeduction(billAmount, deductionPercentage);
 		// VAT kalkulatzen dugu
-		if(code.equals("0")) {
-			VAT = 0.0f;
-		}else {
-			VAT = vatCalc.calculateVAT(billAmount);
-		}
+		VAT = vatCalc.calculateVAT(billAmount);
 		// Totala kalkulatzen dugu
 		billTotal = totalCalc.calculateTotal(billAmount, billDeduction, VAT);
 	}
