@@ -14,5 +14,8 @@ public class Person implements Telephonable, Emailable{
 	 
 	 public void setTelephone(String t) { telephone=t; }
 	 public String getTelephone() { return telephone; }
-
+	 
+	public void receiveEmail(String email) {
+		System.out.println("Person has received this email: " + email);
 	}
+}
